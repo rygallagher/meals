@@ -1,0 +1,49 @@
+@import '~@angular/material/theming';
+
+@import '../../styles/styles.scss';
+@import '../../styles/blue-palette.scss';
+
+$navbar-height: 50px;
+$sidenav-width: 150px;
+$blue-link-color: mat-palette($blue-palette);
+
+.navbar {
+    padding: 0 50px 0 25px;
+    height: $navbar-height;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.spacer {
+    flex: 1 auto;
+}
+  
+.content {
+    top: $navbar-height;
+}
+  
+.sidenav-container {
+    position: absolute;
+    top: $navbar-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    mat-sidenav {
+        width: $sidenav-width;
+    }
+}
+
+.home-button {
+    position: absolute;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    bottom: 0px;
+    width: 100%;
+}
+
+::ng-deep .mat-form-field-wrapper{
+    margin-bottom: -2em;
+}
+
+.active-link {
+    color: mat-color($blue-link-color);
+}

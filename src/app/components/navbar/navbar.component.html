@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" class="navbar">
+    <div class="spacer flex-row">
+        <button mat-icon-button 
+                (click)="sidenavOpen = !sidenavOpen">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" [opened]="sidenavOpen">
+        <form [formGroup]="recipeSearchForm">
+            <mat-form-field appearance="fill" class="width-100">
+                <mat-label>Search...</mat-label>
+                <input matInput type="text" autocomplete="off" formControlName="recipe">
+                <button matSuffix mat-icon-button aria-label="Clear" (click)="recipeSearchForm.reset()">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>              
+        </form>
+
+        <mat-nav-list>
+            <ng-container *ngFor="let route of filteredRoutes | keyvalue; let i = index">
+                <mat-divider></mat-divider>
+                <a mat-list-item routerLink="{{route.key}}" class="small-text" routerLinkActive="active-link">
+                    {{route.value}}
+                </a>
+            </ng-container>
+            <mat-divider></mat-divider>
+        </mat-nav-list>
+
+        <button mat-flat-button class="home-button" (click)="returnHome()">
+            <mat-icon>keyboard_return</mat-icon>
+
+            Return Home
+        </button>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

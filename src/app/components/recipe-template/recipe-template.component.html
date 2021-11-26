@@ -1,0 +1,35 @@
+<div class="surface padding-20 border-radius-5">
+    <div class="x-large-text margin-bottom-10 text-align-center"> {{title}} </div>
+
+    <div *ngIf="imageLink">
+        <img src="{{imageLink}}" alt="Image could not load..." class="center-image margin-20 border-radius-5">
+    </div>
+
+    <div class="medium-text text-align-center"> {{description}} </div>
+
+    <mat-divider class="margin-tb-20"></mat-divider>
+
+    <div class="large-text padding-bottom-20">
+        Ingredients
+
+        <button mat-icon-button [cdkCopyToClipboard]="copyIngredients">
+            <mat-icon>content_copy</mat-icon>
+        </button>
+    </div>
+    <div *ngFor="let ingredient of ingredients">
+        <mat-checkbox color="primary"> {{ingredient}} </mat-checkbox>
+    </div>
+
+    <mat-divider class="margin-tb-20"></mat-divider>
+
+    <div class="large-text padding-bottom-20">Instructions</div>
+    <div *ngFor="let instruction of instructions; let i = index">
+        <mat-checkbox color="primary"> {{instruction}} </mat-checkbox>
+    </div>
+
+    <div *ngIf="notes">
+        <mat-divider class="margin-tb-20"></mat-divider>
+        <div class="large-text padding-bottom-10">Notes</div>
+        <div> {{notes}} </div>
+    </div>
+</div>
