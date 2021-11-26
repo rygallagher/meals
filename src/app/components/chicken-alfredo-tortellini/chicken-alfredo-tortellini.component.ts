@@ -13,7 +13,7 @@ export class ChickenAlfredoTortelliniComponent {
         '1.5 lbs boneless skinless chicken breast',
         '28 oz alfredo sauce',
         '1 teaspoon minced garlic',
-        '½ teaspoon black garlic',
+        '½ teaspoon black pepper',
         '4 cups cheese tortellini',
     ];
     instructions: string[] = [
