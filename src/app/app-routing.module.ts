@@ -7,6 +7,7 @@ import { ChickenParmesanComponent } from './components/chicken-parmesan/chicken-
 import { ChiliComponent } from './components/chili/chili.component';
 import { HomeComponent } from './components/home/home.component';
 import { RavioliLasagnaComponent } from './components/ravioli-lasagna/ravioli-lasagna.component';
+import { SpaghettiSquashComponent } from './components/spaghetti-squash/spaghetti-squash.component';
 
 const routes: Routes = [
     { 
@@ -18,7 +19,7 @@ const routes: Routes = [
         component: BeefAndBroccoliComponent,
     },
     {
-        path: 'chicken-and-tortellini',
+        path: 'chicken-alfredo-tortellini',
         component: ChickenAlfredoTortelliniComponent,
     },
     {
@@ -32,6 +33,10 @@ const routes: Routes = [
     {
         path: 'ravioli-lasagna',
         component: RavioliLasagnaComponent,
+    },
+    {
+        path: 'spaghetti-squash',
+        component: SpaghettiSquashComponent,
     },
     {
         path: '',

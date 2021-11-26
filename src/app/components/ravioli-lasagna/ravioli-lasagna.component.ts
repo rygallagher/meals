@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
     styleUrls: ['./ravioli-lasagna.component.scss']
 })
 export class RavioliLasagnaComponent {
-
     title: string = 'Ravioli Lasagna';
     imageLink: string = 'https://thestayathomechef.com/wp-content/uploads/2021/03/Easy-Ravioli-Lasagna-12.jpg';
     description: string = 'This is a lifehack for making "lasagna". Also, raviolis are amazing.';
@@ -26,4 +25,5 @@ export class RavioliLasagnaComponent {
         'Top with extra cheese.',
         'Cook on low for 4-6 hours.',
     ];
-    notes: string = 'You absolutely need to pre-cook the meat. Do not mess this up.';}
+    notes: string = 'You absolutely need to pre-cook the meat. Do not mess this up.';
+}

@@ -31,6 +31,7 @@ import { RavioliLasagnaComponent } from './components/ravioli-lasagna/ravioli-la
 import { BeefAndBroccoliComponent } from './components/beef-and-broccoli/beef-and-broccoli.component';
 import { ChickenAlfredoTortelliniComponent } from './components/chicken-alfredo-tortellini/chicken-alfredo-tortellini.component';
 import { ChickenParmesanComponent } from './components/chicken-parmesan/chicken-parmesan.component';
+import { SpaghettiSquashComponent } from './components/spaghetti-squash/spaghetti-squash.component';
 
 @NgModule({
     declarations: [
@@ -44,6 +45,7 @@ import { ChickenParmesanComponent } from './components/chicken-parmesan/chicken-
         BeefAndBroccoliComponent,
         ChickenAlfredoTortelliniComponent,
         ChickenParmesanComponent,
+        SpaghettiSquashComponent,
     ],
     imports: [
         AppRoutingModule,

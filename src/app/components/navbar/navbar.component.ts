@@ -12,10 +12,11 @@ export class NavbarComponent {
     routes = new Map([
         ['barbecue-chicken', 'Barbecue Chicken'],
         ['beef-and-broccoli', 'Beef and Broccoli'],
-        ['chicken-and-tortellini', 'Chicken and Tortellini'],
+        ['chicken-alfredo-tortellini', 'Chicken Alfredo Tortellini'],
         ['chicken-parmesan', 'Chicken Parmesan'],
         ['chili', 'Chili'],
         ['ravioli-lasagna', 'Ravioli Lasagna'],
+        ['spaghetti-squash', 'Spaghetti Squash'],
     ]);
 
     filteredRoutes: Map<string, string> = this.routes;
