@@ -21,7 +21,7 @@ export class RavioliLasagnaComponent {
         'Brown the ground beef.',
         'Add onions and garlic to the beef to sauté.',
         'Add a layer of marinara at the bottom of the crock-pot.',
-        'In this order add: meat mixture, cheese, sauce, repeat.',
+        'In this order add: meat mixture, ravioli, cheese, sauce, repeat.',
         'Top with extra cheese.',
         'Cook on low for 4-6 hours.',
     ];
